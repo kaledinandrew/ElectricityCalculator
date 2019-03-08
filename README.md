@@ -8,8 +8,8 @@ To try this app download setup.apk and install it on your device.
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/NavDrawer.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/1RateCounter.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/2RateCounter.jpg)
-![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/3RateCounter.jpg)
 
+![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/3RateCounter.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/HistoryList.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/HistoryExample.jpg)
 
