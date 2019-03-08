@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Electricity Calculator</string>
+    <string name="app_name_rus">Калькулятор Электроэнергии</string>
+    <string name="app_name_tagline_rus">Забудьте о бумажных расчетах</string>
+
+    <string name="day">День</string>
+    <string name="night">Ночь</string>
+    <string name="input">Введите: </string>
+    <string name="inputLocation">Введите место измерения: </string>
+    <string name="previous">Предыд.\nзначение:</string>
+    <string name="current">Текущее\nзначение:</string>
+    <string name="delta">Дельта:</string>
+    <string name="sum">Сумма:</string>
+    <string name="rate">Тариф:</string>
+    <string name="rewriteRates">Изменить тарифы</string>
+    <string name="rewriteRatesSingle">Изменить тариф</string>
+    <string name="calculate">Посчитать</string>
+    <string name="total">Итого:</string>
+    <string name="space"> </string>
+    <string name="nullNumber">0</string>
+    <string name="nullMoney">0 p.</string>
+
+    <string name="rate1">Тариф 1</string>
+    <string name="rate2">Тариф 2</string>
+    <string name="rate3">Тариф 3</string>
+
+    <string name="open">Открыть</string>
+    <string name="close">Закрыть</string>
+
+    <string name="menuOneRate">Однотарифный счетчик</string>
+    <string name="menuTwoRate">Двухтарифный счетчик</string>
+    <string name="menuThreeRate">Трехтарифный счетчик</string>
+    <string name="menuHistory">История расчетов</string>
+    <string name="menuGroup2">Группа 2</string>
+    <string name="menuRateUs">Оценить приложение</string>
+    <string name="menuAbout">О программе</string>
+    <string name="menuExit">Выход</string>
+
+    <string name="showLocation">Место: </string>
+    <string name="showDate">Дата: </string>
+    <string name="showCounterRates">-тарифный счетчик</string>
+    <string name="showValues">Показания: </string>
+    <string name="showTotal">Итого: </string>
+    <string name="showDelete">Удалить</string>
+    <string name="T1">T1</string>
+    <string name="T2">T2</string>
+    <string name="T3">T3</string>
+    <string name="showOk">Ок</string>
+
+    <string name="saveRecord">Сохранить рассчеты</string>
+    <string name="deleteRecord">Удалить запись</string>
+
+</resources>

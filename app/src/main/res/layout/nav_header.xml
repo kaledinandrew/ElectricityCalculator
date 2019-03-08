@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:id="@+id/image_view_nav_drawer"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/icon_lamp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/app_name_rus"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/app_name_tagline_rus"/>
+
+</LinearLayout>

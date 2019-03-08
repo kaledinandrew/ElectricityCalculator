@@ -1,0 +1,262 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.andrey.electricitycalculator.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:baselineAligned="false"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp">
+
+            <AutoCompleteTextView
+                style="@style/MainTextStyle"
+                android:id="@+id/inputLocationSingle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputLocation"
+                android:textAlignment="center"
+                android:inputType="textCapWords|text"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate"
+                    android:layout_weight="8"/>
+
+                <EditText
+                    android:id="@+id/rateSingle"
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:inputType="numberDecimal"
+                    android:text="@string/space"
+                    android:maxLength="6"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveOneRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
+                android:text="@string/rewriteRatesSingle"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+
+            <View
+                android:id="@+id/viewOneRate"
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="@string/previous"
+                    android:textSize="20sp" />
+
+                <EditText
+                    style="@style/MainTextStyle"
+                    android:id="@+id/inputPreviousSingle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:hint="@string/input"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:maxLength="7"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="@string/current"
+                    android:textSize="20sp" />
+
+                <EditText
+                    style="@style/MainTextStyle"
+                    android:id="@+id/inputCurrentSingle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:hint="@string/input"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:maxLength="7" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <Button
+                android:id="@+id/buttonCalculateOneRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
+                android:text="@string/calculate"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="@string/delta"/>
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:id="@+id/deltaSingle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="@string/nullNumber"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="@string/sum"/>
+                <TextView
+                    style="@style/MainTextStyle"
+                    android:id="@+id/sumSingle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="@string/nullMoney"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:text="@string/total"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    style="@style/TitleTextStyle"
+                    android:id="@+id/totalSingle"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nullMoney"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveOneRateRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
+                android:text="@string/saveRecord"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/to_one_rate"
+            android:icon="@drawable/ic_looks_one_black_24dp"
+            android:title="@string/menuOneRate" />
+        <item
+            android:id="@+id/to_two_rate"
+            android:icon="@drawable/ic_looks_two_black_24dp"
+            android:title="@string/menuTwoRate" />
+        <item
+            android:id="@+id/to_three_rate"
+            android:icon="@drawable/ic_looks_3_black_24dp"
+            android:title="@string/menuThreeRate" />
+        <item
+            android:id="@+id/to_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/menuHistory" />
+    </group>
+
+    <group
+        android:id="@+id/menu_group_2"
+        android:checkableBehavior="single">
+            <item
+                android:id="@+id/to_rate_us"
+                android:icon="@drawable/ic_star_black_24dp"
+                android:title="@string/menuRateUs" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/menuExit" />
+    </group>
+
+</menu>
