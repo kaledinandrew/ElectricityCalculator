@@ -7,7 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,17 +18,15 @@
             android:paddingEnd="10sp">
 
             <AutoCompleteTextView
-                style="@style/MainTextStyle"
+                style="@style/InputTextStyle"
                 android:id="@+id/inputLocationThreeRates"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/inputLocation"
-                android:textAlignment="center"
                 android:inputType="textCapWords|text"
                 android:imeOptions="actionDone"
                 android:maxLines="1"
-                android:maxLength="12"
-                android:textSize="24sp" />
+                android:maxLength="12"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,7 +62,6 @@
                 android:id="@+id/viewThreeRates"
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -79,7 +77,7 @@
 
                 <EditText
                     android:id="@+id/rate1"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -90,7 +88,7 @@
 
                 <EditText
                     android:id="@+id/rate2"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -101,7 +99,7 @@
 
                 <EditText
                     android:id="@+id/rate3"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -111,6 +109,11 @@
                     tools:ignore="LabelFor" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+            </View>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,7 +136,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -145,43 +147,36 @@
                     style="@style/MainTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textSize="20sp"
                     android:text="@string/previous" />
 
                 <EditText
                     android:id="@+id/inputFirstPrevious"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
                 <EditText
                     android:id="@+id/inputSecondPrevious"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
                 <EditText
                     android:id="@+id/inputThirdPrevious"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
             </LinearLayout>
@@ -189,7 +184,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -201,43 +195,36 @@
                     style="@style/MainTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textSize="20sp"
                     android:text="@string/current" />
 
                 <EditText
                     android:id="@+id/inputFirstCurrent"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
                 <EditText
                     android:id="@+id/inputSecondCurrent"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
                 <EditText
                     android:id="@+id/inputThirdCurrent"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
             </LinearLayout>
@@ -245,7 +232,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -269,7 +255,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -289,9 +274,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullNumber"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullNumber"/>
 
                 <TextView
                     android:id="@+id/deltaSecond"
@@ -299,9 +282,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullNumber"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullNumber"/>
 
                 <TextView
                     android:id="@+id/deltaThird"
@@ -309,16 +290,13 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullNumber"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullNumber"/>
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -338,9 +316,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullMoney"/>
 
                 <TextView
                     android:id="@+id/sumSecond"
@@ -348,9 +324,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullMoney"/>
 
                 <TextView
                     android:id="@+id/sumThird"
@@ -358,16 +332,13 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullMoney"/>
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -376,23 +347,19 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    style="@style/TotalTextStyle"
                     android:layout_width="0dp"
                     android:layout_weight="2"
                     android:layout_height="wrap_content"
-                    android:textSize="32sp"
-                    android:text="@string/total"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:text="@string/total"/>
 
                 <TextView
                     android:id="@+id/totalThreeRates"
-                    style="@style/TitleTextStyle"
+                    style="@style/TotalTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="32sp" />
+                    android:text="@string/nullMoney" />
 
             </LinearLayout>
 

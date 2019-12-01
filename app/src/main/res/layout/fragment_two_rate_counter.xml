@@ -7,7 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,7 +18,7 @@
             android:paddingEnd="10sp">
 
             <AutoCompleteTextView
-                style="@style/MainTextStyle"
+                style="@style/InputTextStyle"
                 android:id="@+id/inputLocationTwoRates"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,8 +27,7 @@
                 android:inputType="textCapWords|text"
                 android:imeOptions="actionDone"
                 android:maxLines="1"
-                android:maxLength="12"
-                android:textSize="24sp" />
+                android:maxLength="12"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +57,6 @@
                 android:id="@+id/viewTwoRates"
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -74,7 +73,7 @@
 
                 <EditText
                     android:id="@+id/rateDay"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -85,7 +84,7 @@
 
                 <EditText
                     android:id="@+id/rateNight"
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -95,6 +94,11 @@
                     tools:ignore="LabelFor"/>
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+            </View>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -117,7 +121,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -129,29 +132,24 @@
                     style="@style/MainTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/previous"
-                    android:textSize="20sp"/>
+                    android:text="@string/previous"/>
                 <EditText
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:id="@+id/inputDayPrevious"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
                 <EditText
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:id="@+id/inputNightPrevious"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7" />
 
             </LinearLayout>
@@ -159,7 +157,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -171,29 +168,24 @@
                     style="@style/MainTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/current"
-                    android:textSize="20sp" />
+                    android:text="@string/current"/>
                 <EditText
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:id="@+id/inputDayCurrent"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
                 <EditText
-                    style="@style/MainTextStyle"
+                    style="@style/InputTextStyle"
                     android:id="@+id/inputNightCurrent"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="@string/input"
                     android:inputType="number"
-                    android:textAlignment="center"
-                    android:textSize="24sp"
                     android:maxLength="7"/>
 
             </LinearLayout>
@@ -201,7 +193,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -225,7 +216,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -245,25 +235,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullNumber"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullNumber"/>
                 <TextView
                     style="@style/MainTextStyle"
                     android:id="@+id/deltaNight"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullNumber"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullNumber"/>
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -283,25 +268,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullMoney"/>
                 <TextView
                     style="@style/MainTextStyle"
                     android:id="@+id/sumNight"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:text="@string/nullMoney"/>
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="7dp">
-
             </View>
 
             <LinearLayout
@@ -310,25 +290,26 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    style="@style/TotalTextStyle"
                     android:layout_width="0dp"
-                    android:layout_weight="2"
                     android:layout_height="wrap_content"
-                    android:textSize="32sp"
-                    android:text="@string/total"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:layout_weight="2"
+                    android:text="@string/total"/>
 
                 <TextView
                     android:id="@+id/total"
-                    style="@style/TitleTextStyle"
+                    style="@style/TotalTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:text="@string/nullMoney"
-                    android:textAlignment="center"
-                    android:textSize="32sp" />
+                    android:text="@string/nullMoney" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp">
+            </View>
 
             <Button
                 android:id="@+id/saveTwoRatesRecord"

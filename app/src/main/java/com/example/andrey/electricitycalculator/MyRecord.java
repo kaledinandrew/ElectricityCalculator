@@ -9,20 +9,20 @@ public class MyRecord extends SugarRecord {
      String location, date;
      String rate1, rate2, rate3,
             previous1, previous2, previous3,
-            current1, current2, current3,
-            sum1, sum2, sum3;
+            current1, current2, current3;
+     private String sum1, sum2, sum3;
      String total;
 
     public MyRecord(){
 
     }
 
-    public MyRecord(int type, String location, String date,
-                    String rate1, String rate2, String rate3,
-                    String previous1, String previous2, String previous3,
-                    String current1, String current2, String current3,
-                    String sum1, String sum2, String sum3,
-                    String total) {
+    MyRecord(int type, String location, String date,
+             String rate1, String rate2, String rate3,
+             String previous1, String previous2, String previous3,
+             String current1, String current2, String current3,
+             String sum1, String sum2, String sum3,
+             String total) {
         this.type = type;
         this.location = location;
         this.date = date;
@@ -40,23 +40,4 @@ public class MyRecord extends SugarRecord {
         this.sum3 = sum3;
         this.total = total;
     }
-
-    /*
-    public int getType() { return type; }
-    public String getRate1() { return rate1; }
-    public String getRate2() { return rate2; }
-    public String getRate3() { return rate3; }
-    public String getPrevious1() { return previous1; }
-    public String getPrevious2() { return previous2; }
-    public String getPrevious3() { return previous3; }
-    public String getCurrent1() { return current1; }
-    public String getCurrent2() { return current2; }
-    public String getCurrent3() { return current3; }
-    public String getSum1() { return sum1; }
-    public String getSum2() { return sum2; }
-    public String getSum3() { return sum3; }
-    public String getLocation() { return location; }
-    public String getDate() { return date; }
-    public String getTotal() { return total; }
-    */
 }

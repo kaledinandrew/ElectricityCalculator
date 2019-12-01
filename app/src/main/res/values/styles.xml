@@ -10,14 +10,28 @@
     </style>
 
     <style name="TitleTextStyle">
-        <item name="android:textSize">36sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:typeface">monospace</item>
         <item name="android:textAlignment">center</item>
     </style>
 
     <style name="MainTextStyle">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="InputTextStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TotalTextStyle">
+        <item name="android:textSize">26sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:typeface">monospace</item>
         <item name="android:textAlignment">center</item>

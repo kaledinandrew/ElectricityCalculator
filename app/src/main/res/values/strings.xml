@@ -2,6 +2,7 @@
     <string name="app_name">Electricity Calculator</string>
     <string name="app_name_rus">Калькулятор Электроэнергии</string>
     <string name="app_name_tagline_rus">Забудьте о бумажных расчетах</string>
+    <string name="app_icon">Иконка приложения</string>
 
     <string name="day">День</string>
     <string name="night">Ночь</string>
