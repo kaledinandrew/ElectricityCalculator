@@ -1,5 +1,5 @@
 # ElectricityCalculator
-The application that helps to remember the electricity consumption. Made in Russian for Russians.
+The application that helps to remember the electricity consumption. Made in Russian for Russian users.
 
 To try this app download setup.apk and install it on your device.
 
