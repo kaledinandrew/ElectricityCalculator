@@ -3,10 +3,12 @@ package com.example.andrey.electricitycalculator;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -39,7 +41,7 @@ public class TwoRateCounter extends Fragment implements View.OnClickListener {
     String RATE_DAY = "22", RATE_NIGHT = "11";
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_two_rate_counter,
@@ -173,9 +175,12 @@ public class TwoRateCounter extends Fragment implements View.OnClickListener {
             if (getActivity() != null) Toast.makeText(getActivity(),
                     "Введите данные для расчета", Toast.LENGTH_SHORT).show();
         } else if (etLocation.getText().toString().equals("")) {
-            if (getActivity() != null) Toast.makeText(getActivity(),
-                    "Введите название места и \nповторите попытку снова",
-                    Toast.LENGTH_LONG).show();
+            if (getActivity() != null) {
+                Toast.makeText(getActivity(),
+                        "Введите название места и \nповторите попытку снова",
+                        Toast.LENGTH_LONG).show();
+                etLocation.requestFocus();
+            }
         } else {
             Date currentDate = new Date();
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
@@ -225,7 +230,7 @@ public class TwoRateCounter extends Fragment implements View.OnClickListener {
 
         String[] locations = locationsToArray(toStringArray);
         if (getActivity() != null){
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
                     android.R.layout.simple_list_item_1, locations);
             etLocation.setAdapter(adapter);
         }

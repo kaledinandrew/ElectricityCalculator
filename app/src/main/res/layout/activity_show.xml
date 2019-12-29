@@ -199,19 +199,11 @@
 
             <Button
                 android:id="@+id/showButtonDelete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/pink_button"
+                style="@style/DeleteButton"
                 android:onClick="deleteRecord"
-                android:text="@string/deleteRecord"
-                android:textAllCaps="false"
-                android:textColor="@color/pink"
-                android:textSize="24sp" />
+                android:text="@string/deleteRecord"/>
 
         </LinearLayout>
 
     </ScrollView>
-
-
-
 </LinearLayout>

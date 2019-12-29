@@ -56,24 +56,24 @@ public class ThreeRateCounter extends Fragment implements View.OnClickListener{
         saveRates.setOnClickListener(this);
         saveRecord.setOnClickListener(this);
 
-        etRate1 = (EditText)view.findViewById(R.id.rate1);
-        etRate2 = (EditText)view.findViewById(R.id.rate2);
-        etRate3 = (EditText)view.findViewById(R.id.rate3);
-        etInput1Previous = (EditText)view.findViewById(R.id.inputFirstPrevious);
-        etInput1Current = (EditText)view.findViewById(R.id.inputFirstCurrent);
-        etInput2Previous = (EditText)view.findViewById(R.id.inputSecondPrevious);
-        etInput2Current = (EditText)view.findViewById(R.id.inputSecondCurrent);
-        etInput3Previous = (EditText)view.findViewById(R.id.inputThirdPrevious);
-        etInput3Current = (EditText)view.findViewById(R.id.inputThirdCurrent);
-        etLocation = (AutoCompleteTextView)view.findViewById(R.id.inputLocationThreeRates);
+        etRate1 = view.findViewById(R.id.rate1);
+        etRate2 = view.findViewById(R.id.rate2);
+        etRate3 = view.findViewById(R.id.rate3);
+        etInput1Previous = view.findViewById(R.id.inputFirstPrevious);
+        etInput1Current = view.findViewById(R.id.inputFirstCurrent);
+        etInput2Previous = view.findViewById(R.id.inputSecondPrevious);
+        etInput2Current = view.findViewById(R.id.inputSecondCurrent);
+        etInput3Previous = view.findViewById(R.id.inputThirdPrevious);
+        etInput3Current = view.findViewById(R.id.inputThirdCurrent);
+        etLocation = view.findViewById(R.id.inputLocationThreeRates);
 
-        tvDelta1 = (TextView)view.findViewById(R.id.deltaFirst);
-        tvDelta2 = (TextView)view.findViewById(R.id.deltaSecond);
-        tvDelta3 = (TextView)view.findViewById(R.id.deltaThird);
-        tvSum1 = (TextView)view.findViewById(R.id.sumFirst);
-        tvSum2 = (TextView)view.findViewById(R.id.sumSecond);
-        tvSum3 = (TextView)view.findViewById(R.id.sumThird);
-        tvTotal = (TextView)view.findViewById(R.id.totalThreeRates);
+        tvDelta1 = view.findViewById(R.id.deltaFirst);
+        tvDelta2 = view.findViewById(R.id.deltaSecond);
+        tvDelta3 = view.findViewById(R.id.deltaThird);
+        tvSum1 = view.findViewById(R.id.sumFirst);
+        tvSum2 = view.findViewById(R.id.sumSecond);
+        tvSum3 = view.findViewById(R.id.sumThird);
+        tvTotal = view.findViewById(R.id.totalThreeRates);
 
         // helps not to enable editing EditText when the activity starts
         view.findViewById(R.id.viewThreeRates).setFocusableInTouchMode(true);
@@ -199,9 +199,12 @@ public class ThreeRateCounter extends Fragment implements View.OnClickListener{
             if (getActivity() != null) Toast.makeText(getActivity(),
                     "Введите данные для расчета", Toast.LENGTH_SHORT).show();
         } else if (etLocation.getText().toString().equals("")) {
-            if (getActivity() != null) Toast.makeText(getActivity(),
-                    "Введите название места и \nповторите попытку снова",
-                    Toast.LENGTH_LONG).show();
+            if (getActivity() != null) {
+                Toast.makeText(getActivity(),
+                        "Введите название места и \nповторите попытку снова",
+                        Toast.LENGTH_LONG).show();
+                etLocation.requestFocus();
+            }
         } else {
             Date currentDate = new Date();
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
@@ -257,7 +260,7 @@ public class ThreeRateCounter extends Fragment implements View.OnClickListener{
 
         String[] locations = locationsToArray(toStringArray);
         if (getActivity() != null){
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
                     android.R.layout.simple_list_item_1, locations);
             etLocation.setAdapter(adapter);
         }

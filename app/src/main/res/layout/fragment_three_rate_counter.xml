@@ -122,14 +122,8 @@
 
                 <Button
                     android:id="@+id/saveThreeRates"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="40"
-                    android:background="@drawable/main_button"
-                    android:text="@string/rewriteRates"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="24sp" />
+                    style="@style/MainButton"
+                    android:text="@string/rewriteRates"/>
 
             </LinearLayout>
 
@@ -241,14 +235,8 @@
 
                 <Button
                     android:id="@+id/buttonCalculateThreeRates"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="40"
-                    android:background="@drawable/main_button"
-                    android:text="@string/calculate"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="24sp" />
+                    style="@style/MainButton"
+                    android:text="@string/calculate"/>
 
             </LinearLayout>
 
@@ -365,13 +353,8 @@
 
             <Button
                 android:id="@+id/saveThreeRatesRecord"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/main_button"
-                android:text="@string/saveRecord"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp" />
+                style="@style/MainButton"
+                android:text="@string/saveRecord"/>
 
         </LinearLayout>
 

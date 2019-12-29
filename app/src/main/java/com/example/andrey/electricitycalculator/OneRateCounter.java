@@ -54,14 +54,14 @@ public class OneRateCounter extends Fragment implements View.OnClickListener {
         saveRates.setOnClickListener(this);
         saveRecord.setOnClickListener(this);
 
-        etRate = (EditText)view.findViewById(R.id.rateSingle);
-        etInputPrevious = (EditText)view.findViewById(R.id.inputPreviousSingle);
-        etInputCurrent = (EditText)view.findViewById(R.id.inputCurrentSingle);
-        etLocation = (AutoCompleteTextView)view.findViewById(R.id.inputLocationSingle);
+        etRate = view.findViewById(R.id.rateSingle);
+        etInputPrevious = view.findViewById(R.id.inputPreviousSingle);
+        etInputCurrent = view.findViewById(R.id.inputCurrentSingle);
+        etLocation = view.findViewById(R.id.inputLocationSingle);
 
-        tvDelta = (TextView)view.findViewById(R.id.deltaSingle);
-        tvSum = (TextView)view.findViewById(R.id.sumSingle);
-        tvTotal = (TextView)view.findViewById(R.id.totalSingle);
+        tvDelta = view.findViewById(R.id.deltaSingle);
+        tvSum = view.findViewById(R.id.sumSingle);
+        tvTotal = view.findViewById(R.id.totalSingle);
 
         // helps not to enable editing EditText when the activity starts
         view.findViewById(R.id.viewOneRate).setFocusableInTouchMode(true);
@@ -148,9 +148,12 @@ public class OneRateCounter extends Fragment implements View.OnClickListener {
                     "Введите данные для расчета", Toast.LENGTH_SHORT).show();
         }
         else if (etLocation.getText().toString().equals("")){
-            if (getActivity() != null) Toast.makeText(getActivity(),
-                    "Введите название места и \nповторите попытку снова",
-                    Toast.LENGTH_LONG).show();
+            if (getActivity() != null) {
+                Toast.makeText(getActivity(),
+                        "Введите название места и \nповторите попытку снова",
+                        Toast.LENGTH_LONG).show();
+                etLocation.requestFocus();
+            }
         }
         else{
             Date currentDate = new Date();
@@ -199,7 +202,7 @@ public class OneRateCounter extends Fragment implements View.OnClickListener {
 
         String[] locations = locationsToArray(toStringArray);
         if (getActivity() != null){
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
                 android.R.layout.simple_list_item_1, locations);
             etLocation.setAdapter(adapter);
         }

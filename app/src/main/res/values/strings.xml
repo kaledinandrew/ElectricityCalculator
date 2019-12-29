@@ -51,4 +51,9 @@
     <string name="saveRecord">Сохранить рассчеты</string>
     <string name="deleteRecord">Удалить запись</string>
 
+    <string name="confirm_title">Подтверждение</string>
+    <string name="confirm_text">Вы действительно хотите удалить запись?</string>
+    <string name="confirm_yes">Да</string>
+    <string name="confirm_no">Нет</string>
+
 </resources>

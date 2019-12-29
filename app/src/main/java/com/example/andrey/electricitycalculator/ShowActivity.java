@@ -2,23 +2,24 @@ package com.example.andrey.electricitycalculator;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
 
-public class ShowActivity extends AppCompatActivity {
+public class ShowActivity extends AppCompatActivity
+        implements ConfirmDeleteRecord.ConfirmDialogListener {
 
     TextView tvLocation, tvDate, tvCounterRates, tvRatesTitle, tvRates,
             tvT1Title, tvT1, tvT2Title, tvT2, tvT3Title, tvT3, tvTotal;
     int position, type;
-    LinearLayout lineT2;
+    boolean deleteConfirmed;
 
     MyRecord[] records;
     MyRecord record;
@@ -29,7 +30,7 @@ public class ShowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_show);
         getIncomingIntent();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_nav_drawer);
+        Toolbar toolbar = findViewById(R.id.toolbar_nav_drawer);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();
@@ -131,7 +132,17 @@ public class ShowActivity extends AppCompatActivity {
         tvT3.setText((record.previous3 + " -> " + record.current3));
     }
 
+    public void setDeleteConfirmed(boolean deleteConfirmed) {
+        this.deleteConfirmed = deleteConfirmed;
+    }
+
     public void deleteRecord(View view){
+        DialogFragment confirmDeleteRecord = new ConfirmDeleteRecord();
+        confirmDeleteRecord.show(getSupportFragmentManager(), "confirm");
+    }
+
+    @Override
+    public void deleteConfirmed() {
         record.delete();
         Toast.makeText(this, "Запись удалена", Toast.LENGTH_SHORT).show();
         finish();
