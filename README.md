@@ -3,6 +3,9 @@ The application that helps to remember the electricity consumption. Made in Russ
 
 To try this app download setup.apk and install it on your device.
 
+## Android Technologies
+ArrayAdapter, Fragments, RecyclerView, SugarORM (interaction with SQLite), NavigationDrawer
+
 ## Screenshots
 
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/NavDrawer.jpg)
@@ -12,6 +15,3 @@ To try this app download setup.apk and install it on your device.
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/3RateCounter.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/HistoryList.jpg)
 ![](https://github.com/raskolnikoff1147/ElectricityCalculator/blob/master/HistoryExample.jpg)
-
-## Android Technologies
-ArrayAdapter, Fragments, RecyclerView, SugarORM (interaction with SQLite), NavigationDrawer
